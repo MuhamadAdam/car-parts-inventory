@@ -1,0 +1,11 @@
+{
+  "name": "cpi",
+  "version": "1.0.0",
+  "description": "car parts inventroy system",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "Mohammed Yadam",
+  "license": "MIT"
+}
