@@ -1,6 +1,4 @@
-exports.getAllCars = (req, res, next) => {
-  res.send("All cars");
-};
+exports.getAllCars = (req, res, next) => {};
 
 exports.getCar = (req, res, next) => {
   res.send("one car ");
