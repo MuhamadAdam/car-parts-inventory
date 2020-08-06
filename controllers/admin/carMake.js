@@ -1,3 +1,5 @@
+const CarMake = require("../../models/CarMake");
+
 exports.getAllCarMake = (req, res, next) => {
   res.send("All car make");
 };
