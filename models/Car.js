@@ -1,7 +1,7 @@
 const Sequelize = require("sequelize");
 const sequelize = require("../util/db");
 
-const Model = sequelize.define("model", {
+const Car = sequelize.define("car", {
   id: {
     type: Sequelize.INTEGER,
     autoIncrement: true,
@@ -12,8 +12,12 @@ const Model = sequelize.define("model", {
     type: Sequelize.STRING,
     allowNull: false,
   },
-  country: {
+  model: {
     type: Sequelize.STRING,
+    allowNull: false,
+  },
+  model_id: {
+    type: Sequelize.INTEGER,
     allowNull: false,
   },
   make: {
@@ -24,10 +28,12 @@ const Model = sequelize.define("model", {
     type: Sequelize.INTEGER,
     allowNull: false,
   },
-  starting_year: {
+  car_type: {
+    type: Sequelize.STRING,
+  },
+  model_year: {
     type: "TIMESTAMP",
-    allowNull: true,
   },
 });
 
-module.exports = Model;
+module.exports = Car;

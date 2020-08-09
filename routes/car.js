@@ -8,7 +8,9 @@ const {
   destroyCar,
 } = require("../controllers/admin/car");
 
-const car = express.Router();
+const router = express.Router();
 
-car.route("/").get(getAllCars).post(createCar);
-car.route("/:id").get(getCar).put(updateCar).delete(destroyCar);
+router.route("/").get(getAllCars).post(createCar);
+router.route("/:id").get(getCar).put(updateCar).delete(destroyCar);
+
+module.exports = router;

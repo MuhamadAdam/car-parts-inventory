@@ -1,3 +1,5 @@
+const Car = require("../../models/Car");
+
 exports.getAllCars = (req, res, next) => {};
 
 exports.getCar = (req, res, next) => {
